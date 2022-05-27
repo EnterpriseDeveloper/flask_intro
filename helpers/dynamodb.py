@@ -34,7 +34,7 @@ class DynamoDB():
             self.table.put_item(
                 Item={
                     'id': str(len(id)),
-                    'content': content,
+                    'content': content,  
                     'date_created': dateTimeObj.strftime("%d-%b-%Y (%H:%M:%S)"),
                 }
             )
