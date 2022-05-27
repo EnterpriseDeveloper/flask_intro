@@ -1,8 +1,13 @@
 from flask import Flask, render_template, request, redirect
 from helpers.dynamodb import DynamoDB
 from datetime import datetime
+import sys
+import logging
 
 app = Flask(__name__)
+
+app.logger.addHandler(logging.StreamHandler(sys.stdout))
+app.logger.setLevel(logging.ERROR)
 
 
 @app.route('/', methods=['POST', 'GET'])
