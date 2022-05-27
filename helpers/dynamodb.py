@@ -10,8 +10,8 @@ table_name = "todo_list"
 class DynamoDB():
     def __init__(self):
         session = boto3.Session(
-            aws_access_key_id="AKIAX7MFXFJLFOAQRYN5",
-            aws_secret_access_key="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",
+            aws_access_key_id="bla",
+            aws_secret_access_key="bla",
             region_name="us-east-1"
         )
 
