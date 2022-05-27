@@ -12,6 +12,7 @@ class DynamoDB():
         session = boto3.Session(
             aws_access_key_id="AKIAX7MFXFJLFOAQRYN5",
             aws_secret_access_key="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",
+            region_name="us-east-1"
         )
 
         client = session.resource('dynamodb')
